@@ -1,8 +1,9 @@
-class Blah{
-    start(){
-console.log('blah');
-    }
+import linkedList from './linkedList.js';
+
+let list = new linkedList();
+
+for (let i = 0; i < 5; i++) {
+    list.add(i);
 }
 
-var blah = new Blah();
-blah.start();
+console.log(list);
